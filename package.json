@@ -1,0 +1,27 @@
+{
+  "name": "interactive_engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config && typedoc --out docs src/index.ts",
+    "start": "concurrently \"npm:watch\" \"node server.js\"",
+    "watch": "nodemon -e ts --watch src --exec npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "concurrently": "^6.4.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.61.0",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "tslib": "^2.3.1",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.3"
+  }
+}

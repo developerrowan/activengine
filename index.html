@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>ActivEngine</title>
+</head>
+
+<body>
+    <canvas id="activengine" width="500" height="500">
+    </canvas>
+    <script src="dist/activengine.umd.js"></script>
+    <script>
+
+        const {Engine} = activengine;
+
+        const engine = new Engine({canvasId: "activengine", width: 200, height: 200});
+
+        engine.drawing.setBackgroundColorHex("#000000", 1);
+
+        engine.drawHook = () => {
+            
+        };
+
+        engine.updateHook = () => {
+
+        };
+        
+    </script>
+</body>
+
+</html>
